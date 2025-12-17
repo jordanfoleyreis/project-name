@@ -1,129 +1,207 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Jordan Foley-Reis | Power BI Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f6f8;
-            color: #333;
-        }
+```
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background: linear-gradient(180deg, #f9fafb, #eef2f7);
+        color: #1f2937;
+    }
 
-        header {
-            background: #111827;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+    header {
+        background: linear-gradient(135deg, #111827, #1f2937);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+    }
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+    header h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
 
-        header p {
-            font-size: 18px;
-            opacity: 0.9;
-        }
+    header p {
+        font-size: 20px;
+        opacity: 0.9;
+        max-width: 700px;
+        margin: auto;
+    }
 
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 50px 20px;
-        }
+    .cta-buttons {
+        margin-top: 30px;
+    }
 
-        h2 {
-            margin-bottom: 20px;
-        }
+    .cta-buttons a {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 24px;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
 
-        .about {
-            line-height: 1.6;
-        }
+    .btn-primary {
+        background: #2563eb;
+        color: white;
+    }
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+    .btn-primary:hover {
+        background: #1d4ed8;
+    }
 
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+    .btn-outline {
+        border: 2px solid white;
+        color: white;
+    }
 
-        .card h3 {
-            margin-top: 0;
-        }
+    .btn-outline:hover {
+        background: white;
+        color: #111827;
+    }
 
-        .tag {
-            display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-top: 10px;
-        }
+    section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 70px 20px;
+    }
 
-        footer {
-            background: #111827;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
+    h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
 
-        a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .about {
+        font-size: 17px;
+        line-height: 1.7;
+        max-width: 800px;
+    }
 
-        .links a {
-            margin: 0 10px;
-        }
-    </style>
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 14px;
+        padding: 30px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .badge {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 6px 14px;
+        font-size: 12px;
+        border-radius: 20px;
+        background: #e0e7ff;
+        color: #1e3a8a;
+        font-weight: 600;
+    }
+
+    footer {
+        background: #111827;
+        color: #9ca3af;
+        text-align: center;
+        padding: 25px;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #60a5fa;
+        text-decoration: none;
+        margin: 0 8px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+```
+
 </head>
 <body>
 
 <header>
     <h1>Your Name</h1>
-    <p>Power BI Analyst | Data Visualization | Business Insights</p>
+    <p>Power BI Analyst focused on turning raw data into meaningful business insights through clean, interactive dashboards.</p>
+
+```
+<div class="cta-buttons">
+    <a href="https://www.linkedin.com/in/jordanfoley-reis/" class="btn-primary">LinkedIn</a>
+    <a href="resume.pdf" class="btn-outline">Download Resume</a>
+</div>
+```
+
 </header>
 
 <section>
     <h2>About Me</h2>
     <p class="about">
-        I am an aspiring Power BI Analyst with a strong interest in transforming data 
-        into actionable insights. I focus on creating clean, interactive dashboards 
-        that support data-driven decision-making.
+        I am an aspiring Power BI Analyst with a passion for data visualization and storytelling. 
+        My goal is to help organizations make better decisions by transforming complex datasets 
+        into intuitive dashboards and reports. I am continuously building projects to strengthen 
+        my analytical and business intelligence skills.
     </p>
 </section>
 
 <section>
-    <h2>Projects</h2>
+    <h2>Power BI Projects</h2>
 
-    <div class="projects">
+```
+<div class="projects">
+    <div class="card">
+        <h3>Sales Performance Dashboard</h3>
+        <p>Analysis of revenue trends, KPIs, and regional performance using interactive visuals.</p>
+        <span class="badge">Coming Soon</span>
+    </div>
 
-        <div class="card">
-            <h3>Sales Performance Dashboard</h3>
-            <p>Interactive Power BI dashboard analyzing revenue, growth, and KPIs.</p>
-            <span class="tag">Coming Soon</span>
-        </div>
+    <div class="card">
+        <h3>Customer Insights Dashboard</h3>
+        <p>Customer segmentation, churn analysis, and behavioral insights.</p>
+        <span class="badge">Coming Soon</span>
+    </div>
 
-        <div class="card">
-            <h3>Customer Analysis</h3>
-            <p>Insights into customer behavior, churn, and segmentation.</p>
-            <span class="tag">Coming Soon</span>
-        </div>
+    <div class="card">
+        <h3>Financial Overview Dashboard</h3>
+        <p>Monitoring profit, expenses, and financial health metrics.</p>
+        <span class="badge">Coming Soon</span>
+    </div>
+</div>
+```
 
-        <div class="card">
-            <h3>Financial Overview</h3>
-            <p>Tracking profitability, expenses, and financial trends.</p>
-            <span class="tag">Coming Soon</span>
+</section>
+
+<footer>
+    © 2025 Your Name | 
+    <a href="https://www.linkedin.com/in/jordanfoley-reis/">LinkedIn</a> •
+    <a href="https://github.com/jordanfoleyreis">GitHub</a>
+</footer>
+
+</body>
+</html>
